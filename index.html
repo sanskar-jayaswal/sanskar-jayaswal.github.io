@@ -22,6 +22,24 @@
     <link rel="stylesheet" href="assets/css/lineIcons.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+<style>
+#progressbar {
+  background-color: black;
+  border-radius: 13px;
+  /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+
+#progressbar>div {
+  background-color: #0B5ED7;
+  width:48%;
+  /* Adjust with JavaScript */
+  height: 20px;
+  border-radius: 10px;
+}
+</style>
+
   </head>
 
   <body>
@@ -96,7 +114,7 @@
                       <a class="page-scroll" href="#startups">Startups</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#team">Team</a>
+                      <a class="page-scroll" href="#team">Waitlist</a>
                     </li>
                   </ul>
                 </div>
@@ -133,31 +151,31 @@
               <div class="header-hero-content text-center">
                 <!-- <h3
                   class="header-sub-title wow fadeInUp"
-                  data-wow-duration="1.3s"
+                  data-wow-duration="0.5.3s"
                   data-wow-delay="0.2s"
                 >
                   Welcome to Capitall
                 </h3> -->
-                <h2
-                  class="text header-title wow fadeInUp"
-                  data-wow-duration="1.3s"
+                <h1
+                  class="text  wow fadeInUp"
+                  data-wow-duration="0.5.3s"
                   data-wow-delay="0.5s"
                 >
-                  Startup investments for everybody.
-                </h2>
-                <p
+                  Say hi 👋
+                </h1>
+                <h2
                   class="text wow fadeInUp"
-                  data-wow-duration="1.3s"
+                  data-wow-duration="0.5.3s"
                   data-wow-delay="0.8s"
-                  style="font-size: 22.5px"
                 >
                   <!-- Capitall allows everyone - from individual investers to HNIs - to partake in revenue - share based investments levergaging the technology of Blockchain. -->
-                  Capitall allows you to invest in verified brands and grow your capital.
-                </p>
+                  <!-- Capitall allows you to invest in verified brands and grow your capital. -->
+                  to the next generation of investments
+                </h2>
                 <a
-                  href="#about"
+                  href="#features"
                   class="main-btn wow fadeInUp"
-                  data-wow-duration="1.3s"
+                  data-wow-duration="0.5.3s"
                   data-wow-delay="1.1s"
                 >
                   Learn More
@@ -171,7 +189,7 @@
             <div class="col-lg-12">
               <div
                 class="header-hero-image text-center wow fadeIn"
-                data-wow-duration="1.3s"
+                data-wow-duration="0.5.3s"
                 data-wow-delay="1.4s"
               >
                 <img src="assets/invest.png" style="width: 100%; height: 100%"/>
@@ -209,16 +227,26 @@
               <div
                 <
                 class="single-logo mt-30 wow fadeIn"
-                data-wow-duration="1s"
+                data-wow-duration="0.5s"
                 data-wow-delay="0.2s"
-                style="padding-left: 35%; width: 65%"
+                style="padding-left: 8%; width: 65%"
               >
                 <img src="assets/images/Supporters/ef.png" alt="brand">
               </div>
 
+              <div
+                <
+                class="single-logo mt-30 wow fadeIn"
+                data-wow-duration="0.5s"
+                data-wow-delay="0.2s"
+                style="padding-left: 15%; width: 65%"
+              >
+                <img src="assets/images/rize.png" alt="brand">
+              </div>
+
               <!-- <div
                 class="single-logo mt-30 wow fadeIn"
-                data-wow-duration="1s"
+                data-wow-duration="0.5s"
                 data-wow-delay="0.2s"
               >
                 <img src="assets/images/Supporters/thub.png" style="height: 320px" alt="brand"/>
@@ -227,7 +255,7 @@
               <!-- single logo -->
               <!-- <div
                 class="single-logo mt-30 wow fadeIn"
-                data-wow-duration="1.5s"
+                data-wow-duration="0.5.5s"
                 data-wow-delay="0.2s"
               >
                 <img src="assets/images/Supporters/Surge_Facebook.jpg"  style="height: 50%; width: 50%" alt="brand" />
@@ -235,7 +263,7 @@
 
               <div
                 class="single-logo mt-30 wow fadeIn"
-                data-wow-duration="1.5s"
+                data-wow-duration="0.5.5s"
                 data-wow-delay="0.2s"
               >
                 <img src="assets/images/Supporters/ycomb.jpg"  style="height: 50%; width: 50%" alt="brand" />
@@ -245,7 +273,7 @@
               <!-- single logo -->
               <!-- <div
                 class="single-logo mt-30 wow fadeIn"
-                data-wow-duration="1.5s"
+                data-wow-duration="0.5.5s"
                 data-wow-delay="0.3s"
               >
                 <img src="assets/images/brands/graygrids.svg" alt="brand" />
@@ -253,7 +281,7 @@
               <!-- single logo -->
               <!-- <div
                 class="single-logo mt-30 wow fadeIn"
-                data-wow-duration="1.5s"
+                data-wow-duration="0.5.5s"
                 data-wow-delay="0.4s"
               >
                 <img src="assets/images/brands/lineicons.svg" alt="brand" />
@@ -261,7 +289,7 @@
               <!-- single logo -->
               <!-- <div
                 class="single-logo mt-30 wow fadeIn"
-                data-wow-duration="1.5s"
+                data-wow-duration="0.5.5s"
                 data-wow-delay="0.5s"
               >
                 <img
@@ -289,9 +317,9 @@
               <div class="line m-auto"></div>
               <h3 class="title">
                 <br>
-                <div>Become an Ally<div><br>
+                <div><h1>What is Capitall?</h1><div><br>
 
-                <span style="font-size: 80%"> Invest in startups. Make high returns for the same.</span>
+                <span style="font-size: 65%"> Capitall is an investment platform that allows you to lend your money to high growth companies and make fixed monthly returns</span>
               </h3>
             </div>
             <!-- section title -->
@@ -302,7 +330,7 @@
           <div class="col-lg-4 col-md-7 col-sm-8">
             <div
               class="single-services text-center mt-30 wow fadeIn"
-              data-wow-duration="1s"
+              data-wow-duration="0.5s"
               data-wow-delay="0.2s"
             >
               <div class="services-icon">
@@ -316,16 +344,17 @@
                   src="assets/images/services/services-shape-1.svg"
                   alt="shape"
                 /> -->
-                <img src="assets/images/USP/verified.jpg">
+                <!-- <img src="assets/images/USP/verified.jpg"> -->
+
+                <img src="assets/images/savings-concept-illustration/3567810.jpg">
+
                 <i class="lni lni-baloon"> </i>
               </div>
-              <div class="services-content mt-30">
+              <div class="services-content">
                 <h4 class="services-title">
-                    <a href="javascript:void(0)" style="font-size: 30px">Verified Startups</a>
+                    <a href="javascript:void(0)" style="font-size: 30px">Start investing with as low as ₹5000</a>
                 </h4>
-                <p class="text" style="font-size: 17px">
-                  Every startup is vetted and researched upon by our financial officers before onboarding. This allows us to minimize risk while also assuring higher returns.
-                </p>
+
               </div>
             </div>
             <!-- single services -->
@@ -333,7 +362,7 @@
           <div class="col-lg-4 col-md-7 col-sm-8">
             <div
               class="single-services text-center mt-30 wow fadeIn"
-              data-wow-duration="1s"
+              data-wow-duration="0.5s"
               data-wow-delay="0.5s"
             >
               <div class="services-icon">
@@ -347,16 +376,14 @@
                   src="assets/images/services/services-shape-2.svg"
                   alt="shape"
                 />-->
-                <img src="assets/images/USP/accessible.jpg">
+                <img src="assets/images/money-income-concept-illustration/5867770.jpg">
                 <i class="lni "> </i>
               </div>
-              <div class="services-content mt-30">
+              <div class="services-content">
                 <h4 class="services-title">
-                  <a href="javascript:void(0)" style="font-size: 30px">Accessibility</a>
+                  <a href="javascript:void(0)" style="font-size: 30px">Make regular passive income</a>
                 </h4>
-                <p class="text" style="font-size: 17px">
-                  All investments are open to every Capit-ally. Choose from the vetted startups and invest anywhere between ₹2500 to ₹5,00,000.<br> The decision is yours to make!
-                </p>
+
 
               </div>
             </div>
@@ -365,7 +392,7 @@
           <div class="col-lg-4 col-md-7 col-sm-8">
             <div
               class="single-services text-center mt-30 wow fadeIn"
-              data-wow-duration="1s"
+              data-wow-duration="0.5s"
               data-wow-delay="0.8s"
             >
               <div class="services-icon">
@@ -384,22 +411,39 @@
               </div>
               <div class="services-content mt-30">
                 <h4 class="services-title">
-                  <a href="javascript:void(0)ns" style="font-size: 30px">Liquidity</a>
+                  <a href="javascript:void(0)ns" style="font-size: 30px">Liquidate as you wish on our secondary market</a>
                 </h4>
-                <p class="text" style="font-size: 17px">
-                  Allies need not wait for maturity of a debt to get the promised returns. Sell your debt tokens to interested buyers to immediately liquify your holdings.
-                </p>
 
               </div>
+
+
+
             </div>
             <!-- single services -->
+
+
           </div>
+<div style="padding-left: 42%">
+          <a href="#subscribe"
+            class="main-btn wow fadeInUp"
+            data-wow-duration="0.5.3s"
+            data-wow-delay="1.1s"
+            style="font-size: 125%"
+          >
+          Join the waitlist
+          </a>
+</div>
+
+
         </div>
         <!-- row -->
       </div>
       <!-- container -->
+
     </section>
     <!--====== SERVICES PART ENDS ======-->
+
+
 
     <section id="about">
       <!--====== ABOUT PART START ======-->
@@ -425,7 +469,7 @@
             <div class="col-lg-6">
               <div
                 class="about-content mt-50 wow fadeInLeftBig"
-                data-wow-duration="1s"
+                data-wow-duration="0.5s"
                 data-wow-delay="0.5s"
               >
 
@@ -446,7 +490,7 @@
             <div class="col-lg-6">
               <div
                 class="about-image text-center mt-50 wow fadeInRightBig"
-                data-wow-duration="1s"
+                data-wow-duration="0.5s"
                 data-wow-delay="0.5s"
               >
                 <img src="assets/images/3steps/step_3_2.jpg" alt="about" />
@@ -473,7 +517,7 @@
             <div class="col-lg-6 order-lg-last">
               <div
                 class="about-content ms-lg-auto mt-50 wow fadeInLeftBig"
-                data-wow-duration="1s"
+                data-wow-duration="0.5s"
                 data-wow-delay="0.5s"
               >
                 <div class="section-title">
@@ -493,7 +537,7 @@
             <div class="col-lg-6 order-lg-first">
               <div
                 class="about-image text-center mt-50 wow fadeInRightBig"
-                data-wow-duration="1s"
+                data-wow-duration="0.5s"
                 data-wow-delay="0.5s"
               >
                 <img src="assets/images/3steps/step2.jpg" alt="about" />
@@ -514,7 +558,7 @@
             <div class="col-lg-6">
               <div
                 class="about-content mt-50 wow fadeInLeftBig"
-                data-wow-duration="1s"
+                data-wow-duration="0.5s"
                 data-wow-delay="0.5s"
               >
                 <div class="section-title">
@@ -534,7 +578,7 @@
             <div class="col-lg-6">
               <div
                 class="about-image text-center mt-50 wow fadeInRightBig"
-                data-wow-duration="1s"
+                data-wow-duration="0.5s"
                 data-wow-delay="0.5s"
               >
                 <img src="assets/images/3steps/step3.jpg" alt="about" />
@@ -569,7 +613,7 @@
             <br>
             <div>Startups</div><br>
 
-            <span style="font-size: 80%"> Nice to meet you!</span>
+            <span style="font-size: 80%"> It's a surprise party - and <b> you're invited!</b></span>
           </h3>
         </div>
       </div>
@@ -577,11 +621,11 @@
 
     <div class="row justify-content-center">
 
-      <div class="col-lg-4 col-md-7 col-sm-8">
+      <!-- <div class="col-lg-4 col-md-7 col-sm-8">
 
       <div
           class="single-services text-center mt-30 wow fadeIn"
-          data-wow-duration="1s"
+          data-wow-duration="0.5s"
           data-wow-delay="0.8s"
         >
           <div class="services-icon">
@@ -595,71 +639,56 @@
             <p class="text" style="font-size: 23px">
 Ethically sourced eggs, right from their farms. No middle-men, no cages!            </p>
 
-              <!-- <a href="https://www.linkedin.com/in/sanskarjayaswal/"><input type="image" src="assets/images/Team/linkedin.png" style="width: 150px;" name="saveForm" class="btTxt submit" id="saveForm"></input></a> -->
-
               <br>
               <a class="more" href="http://3.91.54.222/welcome/default/meatyour.html" style="font-size: 130%;color: #2759CA">
                 Learn More<i class="lni lni-chevron-right"> </i>
               </a>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="col-lg-4 col-md-7 col-sm-8">
 
-      <div
-          class="single-services text-center mt-30 wow fadeIn"
-          data-wow-duration="1s"
-          data-wow-delay="0.8s"
-        >
-          <div class="services-icon">
-            <img src="assets/images/Startups/trukky.jpg" style="width: 50%">
-            <i class="lni "> </i>
-          </div>
-          <div class="services-content mt-30">
-            <h4 class="services-title">
-              <a href="http://3.91.54.222/welcome/default/trukky.html" style="font-size: 30px">Trukky</a>
-            </h4>
-            <p class="text" style="font-size: 23px">
-A Logistics aggregator offering on-demand transportation solutions to cater to goods movement in both Full load & Part load segment.</p>
-              <!-- <a href="https://www.linkedin.com/in/sanskarjayaswal/"><input type="image" src="assets/images/Team/linkedin.png" style="width: 150px;" name="saveForm" class="btTxt submit" id="saveForm"></input></a> -->
 
-              <br>
-              <a class="more" href="http://3.91.54.222/welcome/default/trukky.html" style="font-size: 130%;color: #2759CA">
-                Learn More<i class="lni lni-chevron-right"> </i>
-              </a>
-
-          </div>
-        </div>
       </div>
 
 
 
-      <div class="col-lg-4 col-md-7 col-sm-8">
+      <div class="">
         <div
           class="single-services text-center mt-30 wow fadeIn"
-          data-wow-duration="1s"
+          data-wow-duration="0.5s"
           data-wow-delay="0.5s"
         >
           <div class="services-icon">
 
-            <img src="assets/images/Startups/bonomi.png" style="width: 40%;">
+            <!-- <img src="assets/images/Startups/bonomi.png" style="width: 40%;"> -->
             <i class="lni "> </i>
           </div>
           <div class="services-content mt-30">
             <h4 class="services-title">
-              <a href="http://3.91.54.222/welcome/default/bonomi.html" style="font-size: 30px">Bonomi</a>
+              <a href="http://3.91.54.222/welcome/default/bonomi.html" style="font-size: 30px">Unveiling on</a>
             </h4>
             <p class="text" style="font-size: 23px">
-              Take your everyday experiences of dining, socialising and meeting and elevate it to a whole new level with Bonomi's curated offerings.</p>
+              18th February 2022
+            </p>
             <!-- <a href="https://www.linkedin.com/in/pranav-nair/"><input type="image" src="assets/images/Team/linkedin.png" style="width: 150px;" name="saveForm" class="btTxt submit" id="saveForm"></input></a> -->
 
             <br>
-            <a class="more" href="javascript:void(0)" style="font-size: 130%;color: #2759CA">
-              Learn More<i class="lni lni-chevron-right"> </i>
-            </a>
+            <!-- <a class="more" href="javascript:void(0)" style="font-size: 130%;color: #2759CA">
+              Join the waitlist<i class="lni lni-chevron-right"> </i>
+            </a> -->
 
           </div>
+<br>
+        <a href="#subscribe"
+          class="main-btn wow fadeInUp"
+          data-wow-duration="0.5.3s"
+          data-wow-delay="1.1s"
+          style="font-size: 125%"
+        >
+        Join the waitlist
+        </a>
 
         </div>
       </div>
@@ -673,20 +702,11 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
       <div class="text-center">
         <!-- <h3
           class="header-sub-title wow fadeInUp"
-          data-wow-duration="1.3s"
+          data-wow-duration="0.5.3s"
           data-wow-delay="0.2s"
         >
           Welcome to Capitall
         </h3> -->
-        <a
-          href="#subscribe"
-          class="main-btn wow fadeInUp"
-          data-wow-duration="1.3s"
-          data-wow-delay="1.1s"
-          style="font-size: 125%"
-        >
-        Invest Now
-        </a>
 
       <!-- header hero content -->
   </div>
@@ -694,7 +714,7 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
 
 
 
-<section id="team" class="services-area pt-120">
+<!-- <section id="team" class="services-area pt-120">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10">
@@ -704,7 +724,7 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
             <br>
             <div>Meet the Team.<div><br>
 
-            <span style="font-size: 80%"> Nice to meet you!</span>
+            <span style="font-size: 80%"> </span>
           </h3>
         </div>
       </div>
@@ -715,7 +735,7 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
 
       <div
           class="single-services text-center mt-30 wow fadeIn"
-          data-wow-duration="1s"
+          data-wow-duration="0.5s"
           data-wow-delay="0.8s"
         >
           <div class="services-icon">
@@ -739,7 +759,7 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
       <div class="col-lg-4 col-md-7 col-sm-8">
         <div
           class="single-services text-center mt-30 wow fadeIn"
-          data-wow-duration="1s"
+          data-wow-duration="0.5s"
           data-wow-delay="0.5s"
         >
           <div class="services-icon">
@@ -764,7 +784,7 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
   </div>
 </div>
 </div>
-</section>
+</section> -->
 
 <section id="team" class="services-area pt-120">
   <div class="container">
@@ -775,9 +795,11 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
           <h3 class="title">
             <br>
             <section id="subscribe">
-            <div>Interested?<div><br>
 
-            <span style="font-size: 80%"> Subscribe to know more!</span>
+            <div>Why join the waitlist?<div><br>
+            <p style="font-size: 65%;">1) Make additional 50% returns on the first 3 listed startups. No questions asked.</p>
+            <p style="font-size: 65%;  padding-top: 2.5%">2) Get access to a dedicated investment manager.</p>
+            <!-- <span style="font-size: 80%"> Subscribe to know more!</span> -->
           </h3>
         </div>
       </div>
@@ -789,7 +811,7 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
 
       <div
           class="single-services text-center mt-30 wow fadeIn"
-          data-wow-duration="1s"
+          data-wow-duration="0.5s"
           data-wow-delay="0.8s"
         >
           <div class="services-icon">
@@ -820,7 +842,6 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
             <form id="fs-frm" accept-charset="utf-8" action="https://formspree.io/f/xvodjrjy" method="post">
               <div class="form-group">
                 <fieldset id="fs-frm-inputs">
-
                   <label for="full-name">Full Name</label>
                   <br>
                   <input type="text" name="name" id="full-name" placeholder="First and Last" class="form-control" aria-describedby="fullname" required="">
@@ -843,16 +864,37 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
 
             </form>
 
+            <br>
+            <br>
+
+
+
+
+
             <!-- Button trigger modal -->
 
 
           </div>
+          <form id="fs-frm" accept-charset="utf-8" action="https://formspree.io/f/xvodjrjy" method="post">
+            <div class="form-group">
+
+
+          <div id="progressbar">
+            <div></div>
+          </div>
+
+          <p style="padding-top: 3%; font-size:110%"><b>Waitlisted sign ups: <i>485/1000</i><b></p>
+          <p style="font-size:80%"> (Figure updated every 6 hours) </p>
+          </form>
         </div>
       </div>
     </div>
   </div>
+
 </div>
 </div>
+
+<p> This is a try </p>
 
 </section>
 
@@ -862,20 +904,20 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
       <div class="container">
         <div
           class="subscribe-area wow fadeIn"
-          data-wow-duration="1s"
+          data-wow-duration="0.5s"
           data-wow-delay="0.5s"
         >
           <div class="row">
             <div class="col-lg-6">
               <div class="subscribe-content mt-45">
                 <h2 class="subscribe-title">
-                  Like what we do? <span>We're hiring, reach out to us!</span>
+                  Like what we do? <span>We're hiring!</span>
                 </h2>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="subscribe-form mt-50">
-    <p style="font-size: 150%">Reach out to us:<br><br> pranavnair@whynotconsult.tech<br><br>+919642071222</p>
+    <p style="font-size: 150%">Reach out to us:<br><br>hi@capitall.club<br><br></p>
 <!-- your other form fields go here -->
               </div>
             </div>
@@ -888,7 +930,7 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
             <div class="col-lg-4 col-md-6 col-sm-8">
               <div
                 class="footer-about mt-50 wow fadeIn"
-                data-wow-duration="1s"
+                data-wow-duration="0.5s"
                 data-wow-delay="0.2s"
               >
                 <a class="logo" href="javascript:void(0)">
@@ -924,7 +966,7 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
               <div class="footer-link d-flex mt-50 justify-content-sm-between">
                 <div
                   class="link-wrapper wow fadeIn"
-                  data-wow-duration="1s"
+                  data-wow-duration="0.5s"
                   data-wow-delay="0.4s"
                 >
                   <!-- <div class="footer-title">
@@ -941,7 +983,7 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
                 <!-- footer wrapper -->
                 <div
                   class="link-wrapper wow fadeIn"
-                  data-wow-duration="1s"
+                  data-wow-duration="0.5s"
                   data-wow-delay="0.6s"
                 >
                   <div class="footer-title">
@@ -952,7 +994,7 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
                     <li><a class="page-scroll" href="#features">Features</a></li>
                     <li><a class="page-scroll" href="#about">About</a></li>
                     <li><a class="page-scroll" href="#startups">Startups</a></li>
-                    <li><a class="page-scroll" href="#team">Team</a></li>
+                    <li><a class="page-scroll" href="#team">Waitlist</a></li>
                   </ul>
                 </div>
                 <!-- footer wrapper -->
@@ -962,7 +1004,7 @@ A Logistics aggregator offering on-demand transportation solutions to cater to g
             <div class="col-lg-3 col-md-5 col-sm-12">
               <div
                 class="footer-contact mt-50 wow fadeIn"
-                data-wow-duration="1s"
+                data-wow-duration="0.5s"
                 data-wow-delay="0.8s"
               >
                 <div class="footer-title">
