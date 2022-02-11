@@ -39,27 +39,20 @@ body {font-family: Arial, Helvetica, sans-serif;}
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s
 }
 
-/* Modal Content */
+/* Modal Content/Box */
 .modal-content {
-  position: fixed;
-  bottom: 0;
   background-color: #fefefe;
-  width: 100%;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
-  animation-duration: 0.4s
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
-  color: white;
+  color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -67,44 +60,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: black;
   text-decoration: none;
   cursor: pointer;
-}
-
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-/* Add Animation */
-@-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}
-
-@keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}
-
-@-webkit-keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
 }
 
 #progressbar {
@@ -263,6 +221,18 @@ body {font-family: Arial, Helvetica, sans-serif;}
                 >
                   Learn More
                 </a>
+<span style="padding-left: 4%"></span>
+                          <a href="#subscribe"
+                            class="main-btn wow fadeInUp"
+                            data-wow-duration="0.5.3s"
+                            data-wow-delay="1.1s"
+                            style="font-size: 125%"
+                          >
+                          Join the waitlist
+                          </a>
+
+
+
               </div>
               <!-- header hero content -->
             </div>
@@ -390,6 +360,20 @@ body {font-family: Arial, Helvetica, sans-serif;}
       <!-- container -->
     </div>
     <!--====== BRAND PART ENDS ======-->
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+
+    </div>
 
     <!--====== SERVICES PART START ======-->
     <section id="features" class="services-area pt-120">
@@ -933,8 +917,10 @@ Ethically sourced eggs, right from their farms. No middle-men, no cages!        
                   <!-- <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
 
                 </fieldset id="fs-frm-inputs">
+
+
               <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
-            </div>
+
 
             </form>
 
@@ -1132,5 +1118,34 @@ Ethically sourced eggs, right from their farms. No middle-men, no cages!        
     <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
   </body>
 </html>
